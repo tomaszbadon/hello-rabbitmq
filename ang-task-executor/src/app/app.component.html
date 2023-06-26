@@ -1,0 +1,11 @@
+<div class="container">
+  
+  <button class="button button-green" (click)="submitNewTask()">Submit a task</button>
+
+  <button class="button button-red" (click)="deleteCompletedTasks()">Delete completed</button>
+
+  <button class="button button-green" (click)="submitNewTask()">Hide completed</button>
+
+  <app-progress-bar *ngFor="let task of tasks" [task]="task" />
+
+</div>

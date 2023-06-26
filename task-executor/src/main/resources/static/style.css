@@ -1,0 +1,16 @@
+
+html, body {
+  margin: 0px;
+}
+
+.my-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0f1;
+}
+
+.progress {
+    margin: 10px;
+    height: 25px;
+}
