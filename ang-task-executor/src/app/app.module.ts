@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskSchedulerComponent } from './task-scheduler/task-scheduler.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    TaskSchedulerComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

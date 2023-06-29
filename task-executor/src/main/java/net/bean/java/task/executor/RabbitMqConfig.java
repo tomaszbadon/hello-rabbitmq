@@ -7,11 +7,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMqConfig {
 
-    public final static String QUEUE_NAME = "active-task";
+    public final static String ACTIVE_TASK_QUEUE = "active-task";
+
+    public final static String INCOMING_TASK_QUEUE = "incoming";
 
     @Bean
     Queue queue() {
-        return new Queue(QUEUE_NAME, false);
+        return new Queue(ACTIVE_TASK_QUEUE, false);
     }
 
 }

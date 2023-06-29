@@ -45,7 +45,7 @@ public class Task implements Runnable {
     private void sendNotification() {
         try {
             String xml = mapper.writeValueAsString(this);
-            template.convertAndSend(RabbitMqConfig.QUEUE_NAME, xml);
+            template.convertAndSend(RabbitMqConfig.ACTIVE_TASK_QUEUE, xml);
         } catch (JsonProcessingException e) {
             log.error(e.getMessage(), e);
         }
